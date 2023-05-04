@@ -12,42 +12,43 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
 // All icons do for above like below
 //import {AccountCircleOutlinedIcon} from "@mui/icons-material";
 
 const Sidebar = memo(() => {
-  const {dispatch}=useContext(DarkModeContext);
+  const { dispatch } = useContext(DarkModeContext);
+
   return (
     <div className="sidebar">
       <div className="top">
-        <Link to="/" style={{textDecoration:'none'}}>
-        <span className="logo">shiv admin</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">shiv admin</span>
         </Link>
       </div>
       <hr />
       <div className="center">
         <ul>
           <p className="title">MAIN</p>
-          <Link to="/" style={{textDecoration:'none'}}>
-          <li>
-            <DashboardIcon className="icon" />
-            <span>Dashboard</span>
-          </li>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <li>
+              <DashboardIcon className="icon" />
+              <span>Dashboard</span>
+            </li>
           </Link>
           <p className="title">LISTS</p>
-          <Link to="/users" style={{textDecoration:'none'}}>
-          <li>
-            <PersonOutlineOutlinedIcon className="icon" />
-            <span>Users</span>
-          </li>
+          <Link to="/users" style={{ textDecoration: "none" }}>
+            <li>
+              <PersonOutlineOutlinedIcon className="icon" />
+              <span>Users</span>
+            </li>
           </Link>
-          <Link to="/products" style={{textDecoration:'none'}}>
-          <li>
-            <StoreIcon className="icon" />
-            <span>Products</span>
-          </li>
+          <Link to="/products" style={{ textDecoration: "none" }}>
+            <li>
+              <StoreIcon className="icon" />
+              <span>Products</span>
+            </li>
           </Link>
           <li>
             <CreditCardIcon className="icon" />
@@ -92,8 +93,14 @@ const Sidebar = memo(() => {
         </ul>
       </div>
       <div className="bottom">
-        <div className="colorOption" onClick={()=>dispatch({type:"LIGHT"})}></div>
-        <div className="colorOption" onClick={()=>dispatch({type:"DARK"})}></div>
+        <div
+          className="colorOption"
+          onClick={() => dispatch({ type: "LIGHT" })}
+        ></div>
+        <div
+          className="colorOption"
+          onClick={() => dispatch({ type: "DARK" })}
+        ></div>
       </div>
     </div>
   );
