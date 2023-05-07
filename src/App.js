@@ -1,13 +1,13 @@
-import Home from "./pages/home/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/login/Login";
-import Single from "./pages/single/Single";
-import List from "./pages/list/List";
-import New from "./pages/new/New";
-import { productInputs, userInputs } from "./formSource";
-import "./style/dark.scss";
 import { useContext } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Single from "./pages/Single";
+import List from "./pages/List";
+import New from "./pages/New";
+import { productInputs, userInputs } from "./formSource";
 import { DarkModeContext } from "./context/darkModeContext";
+import "./style/dark.scss";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
