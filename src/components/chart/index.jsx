@@ -1,14 +1,13 @@
-import React, { memo } from "react";
-import "./chart.scss";
+import { memo } from "react";
 import {
   AreaChart,
   Area,
   XAxis,
-  YAxis,
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import "./chart.scss";
 
 const data = [
   { name: "January", Total: 1200 },

@@ -1,8 +1,8 @@
-import "./new.scss";
-import Sidebar from "../../components/sidebar/Sidebar";
-import Navbar from "../../components/navbar/Navbar";
-import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
 import { useState } from "react";
+import Sidebar from "../../components/Sidebar";
+import Navbar from "../../components/Navbar";
+import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
+import "./new.scss";
 
 const New = ({ inputs, title }) => {
   const [file, setFile] = useState("");

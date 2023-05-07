@@ -1,5 +1,4 @@
 import { memo, useContext } from "react";
-import "./navbar.scss";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
@@ -9,6 +8,7 @@ import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutline
 import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import { DarkModeContext } from "../../context/darkModeContext";
+import "./navbar.scss";
 
 const Navbar = memo(() => {
   const { darkMode, dispatch } = useContext(DarkModeContext);

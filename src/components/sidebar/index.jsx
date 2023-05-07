@@ -1,5 +1,5 @@
 import { memo, useContext } from "react";
-import "./sidebar.scss";
+import { Link } from "react-router-dom";
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
@@ -12,10 +12,8 @@ import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import SettingsSystemDaydreamOutlinedIcon from "@mui/icons-material/SettingsSystemDaydreamOutlined";
 import PsychologyOutlinedIcon from "@mui/icons-material/PsychologyOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
-import { Link } from "react-router-dom";
 import { DarkModeContext } from "../../context/darkModeContext";
-// All icons do for above like below
-//import {AccountCircleOutlinedIcon} from "@mui/icons-material";
+import "./sidebar.scss";
 
 const Sidebar = memo(() => {
   const { dispatch } = useContext(DarkModeContext);
