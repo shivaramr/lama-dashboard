@@ -1,8 +1,6 @@
 # React.js Simple Dashboard
-![Dashboard Screenshot 1](https://github.com/shivaramr/lama-dashboard/assets/85446156/6ebc371c-5a75-482c-bc16-78881bd37771)
 
-![Dashboard Screenshot 1](https://github.com/shivaramr/lama-dashboard/blob/master/public/dashboard.jpg?raw=true)
-![Dashboard Screenshot 1](public/dashboard.jpg)
+![Dashboard Screenshot 1](https://github.com/shivaramr/lama-dashboard/assets/85446156/6ebc371c-5a75-482c-bc16-78881bd37771)
 
 This is a dashboard built using React.js, and Material UI. It provides a user-friendly interface for data visualization and management. The charts have been developed using recharts.
 
